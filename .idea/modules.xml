@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NinaCoreSampleApp.iml" filepath="$PROJECT_DIR$/NinaCoreSampleApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NuancedCooking.iml" filepath="$PROJECT_DIR$/NuancedCooking.iml" />
     </modules>
   </component>
 </project>
