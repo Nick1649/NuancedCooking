@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    
+    File: fragment_dictation.xml
+    
+    Copyright (C) 2015, Nuance Communications Inc. All Rights Reserved.
+    
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false" >
+
+        <Button
+            android:id="@+id/cancelDictationButton"
+            android:layout_width="102dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/dictationButton"
+            android:layout_width="102dp"
+            android:layout_height="50dp"
+            android:layout_column="1"
+            android:layout_gravity="bottom"
+            android:text="Dictate" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultDictationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

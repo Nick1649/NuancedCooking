@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    
+    File: activity_main.xml
+    
+    Copyright (C) 2015, Nuance Communications Inc. All Rights Reserved.
+    
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/fragmentSayButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Say" />
+
+        <Button
+            android:id="@+id/fragmentDictationButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dictate" />
+
+        <Button
+            android:id="@+id/fragmentTypeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Type" />
+
+        <Button
+            android:id="@+id/fragmentHintButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="Hint" />
+
+        <Button
+            android:id="@+id/fragmentPlayButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="Play" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineralLayoutFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:layout_height="250dp" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineralLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollViewLog"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp" >
+
+        <ProgressBar
+            android:id="@+id/levelSoundBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:progressDrawable="@drawable/verticalprogressbar" />
+
+        <ProgressBar
+            android:id="@+id/levelSoundBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:progressDrawable="@drawable/verticalprogressbar" />
+
+        <ProgressBar
+            android:id="@+id/levelSoundBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:progressDrawable="@drawable/verticalprogressbar" />
+
+        <ProgressBar
+            android:id="@+id/levelSoundBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:progressDrawable="@drawable/verticalprogressbar" />
+
+        <ProgressBar
+            android:id="@+id/levelSoundBar4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:progressDrawable="@drawable/verticalprogressbar" />
+
+        <ProgressBar
+            android:id="@+id/levelSoundBar5"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:progressDrawable="@drawable/verticalprogressbar" />
+
+        <ProgressBar
+            android:id="@+id/levelSoundBar6"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:progressDrawable="@drawable/verticalprogressbar" />
+
+        <ProgressBar
+            android:id="@+id/levelSoundBar7"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:progressDrawable="@drawable/verticalprogressbar" />
+
+        <ProgressBar
+            android:id="@+id/levelSoundBar8"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:progressDrawable="@drawable/verticalprogressbar" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewLog"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp" >
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="15sp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.25"
+            android:text="Settings" />
+
+        <Button
+            android:id="@+id/connectButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.75"
+            android:text="Connect" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hiddenTextView"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/scrollViewLog"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:text="" />
+
+</RelativeLayout>

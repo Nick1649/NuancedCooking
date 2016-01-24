@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    
+    File: fragment_play.xml
+    
+    Copyright (C) 2015, Nuance Communications Inc. All Rights Reserved.
+    
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android1:id="@+id/linearLayout1"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true" >
+
+        <RadioGroup
+            android:id="@+id/optionsRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fbplacename"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/plainRadio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Plain Text" />
+
+            <RadioButton
+                android:id="@+id/SSMLRadio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SSML" />
+
+            <RadioButton
+                android:id="@+id/URLRadio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="URL" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android1:id="@+id/gridLayout1"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android1:layout_below="@+id/linearLayout1" >
+
+        <EditText
+            android1:id="@+id/playText"
+            android1:layout_width="match_parent"
+            android1:layout_height="match_parent"
+            android1:layout_alignParentLeft="true"
+            android:lines="4"
+            android:scrollbars="vertical"
+            android1:ems="10"
+            android1:inputType="textMultiLine" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android1:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android1:layout_below="@+id/gridLayout1"
+        android1:layout_centerHorizontal="true" >
+
+        <Button
+            android1:id="@+id/playButton"
+            android1:layout_width="70dp"
+            android1:layout_height="50dp"
+            android1:layout_alignBottom="@+id/stopButton"
+            android1:layout_centerHorizontal="true"
+            android1:text="Play" />
+
+        <Button
+            android1:id="@+id/stopButton"
+            android1:layout_width="70dp"
+            android1:layout_height="50dp"
+            android1:layout_alignParentBottom="true"
+            android1:layout_alignParentRight="true"
+            android1:text="Stop" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    
+    File: fragment_hint.xml
+    
+    Copyright (C) 2015, Nuance Communications Inc. All Rights Reserved.
+    
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/hintSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/hint_prompt" />
+
+    <TextView
+        android:id="@+id/resultHintLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hintSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

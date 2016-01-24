@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    
+    File: fragment_type.xml
+    
+    Copyright (C) 2015, Nuance Communications Inc. All Rights Reserved.
+    
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/typeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:singleLine="false" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Send" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:gravity="center"
+        android:orientation="vertical" 
+        android:layout_marginLeft="25dp">
+
+        <TextView
+            android:id="@+id/resultLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</RelativeLayout>

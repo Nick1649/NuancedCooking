@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    
+    File: strings.xml
+    
+    Copyright (C) 2015, Nuance Communications Inc. All Rights Reserved.
+    
+-->
+<resources>
+
+    <string name="app_name">NinaCoreSampleApp</string>
+    <string name="title_activity_main">NinaCoreSampleApp</string>
+
+    <string name="hint_prompt">Choose a hint</string>
+    <string name="locale_prompt">Choose a locale</string>
+
+
+    <string name="title_activity_settings">SettingsActivity</string>
+</resources>
