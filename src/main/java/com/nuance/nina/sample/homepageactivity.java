@@ -53,7 +53,7 @@ public class homepageactivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
-                Toast.makeText(getBaseContext(), "WEEEEE", Toast.LENGTH_LONG).show();
+                Toast.makeText(getBaseContext(), "Recipe Selected", Toast.LENGTH_LONG).show();
 
             }
         });

@@ -53,7 +53,7 @@ public class MyConnectionListener implements ConnectionListener{
 			public void run() {
 				MainActivity.toast  = Toast.makeText(myContext, "connected!!!", Toast.LENGTH_SHORT);
 				MainActivity.toast.show();
-				MMFController.getInstance().playPrompt("Welcome to Nina", PromptType.TEXT);
+				MMFController.getInstance().playPrompt("Welcome to Nuanced Cooking. Say Start to begin", PromptType.TEXT);
 				((MainActivity) myActivity).buttonStatus(true);
 				((MainActivity)myActivity).log(DateFormat.getDateTimeInstance().format(new Date()) + ": Connected");
 			}
